@@ -248,9 +248,9 @@ passo_m <- function(T) list(
 tol_nbv = 0.0001
 erro = 1
 iter = 0
+maxit = 500
 
-
-while ((iter < maxit) && (erro > tol)){
+while ((iter < maxit) && (erro > tol_nbv)){
   theta_old = theta
   T <- passo_e(theta)
   theta <- passo_m(T)
