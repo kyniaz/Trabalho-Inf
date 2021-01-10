@@ -360,4 +360,4 @@ graf_em_class + geom_point(data = df_em_class,
 
 #Gráfico em 3d
 mod5 <- densityMclust(faithful[,2:3], G = 2)
-plot(mod5, main="Densidade da Mistura", xlab = "Duração da Erupção(min)", ylab ="Tempo de Espera(min)", what = "density", type = "persp")
+plot(mod5, main="Densidade da Mistura", xlab = "Duração da Erupção(min)", ylab ="Tempo de Espera(min)", what = "density", type = "persp", theta = -10)
